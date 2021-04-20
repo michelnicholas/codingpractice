@@ -20,20 +20,20 @@ public class String2ZipZap {
     /*
     SOLVED *****
      */
-    public String zipZap (String str){
-            String result = ""; // Return new string
-            for (int i = 0; i < str.length(); i++) {
+    public String zipZap(String str) {
+        String result = ""; // Return new string
+        for (int i = 0; i < str.length(); i++) {
 
-                if (i + 2 < str.length() && str.charAt(i) == 'z' && str.charAt(i + 2) == 'p') {
+            if (i + 2 < str.length() && str.charAt(i) == 'z' && str.charAt(i + 2) == 'p') {
 
-                    result += "zp";
-                    i += 2;
-                } else {
-                    result += str.charAt(i);
-                }
+                result += "zp";
+                i += 2;
+            } else {
+                result += str.charAt(i);
             }
-            return result;
-
         }
+        return result;
+
     }
+}
 

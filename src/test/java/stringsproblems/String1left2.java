@@ -25,6 +25,7 @@ public class String1left2 {
 
     @Test
     public void example(){
+
         System.out.println(left2("happy"));
     }
 

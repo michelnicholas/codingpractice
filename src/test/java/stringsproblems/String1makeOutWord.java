@@ -1,5 +1,7 @@
 package stringsproblems;
 
+import org.testng.annotations.Test;
+
 public class String1makeOutWord {
 
 
@@ -11,6 +13,11 @@ public class String1makeOutWord {
 //    makeOutWord("[[]]", "word") → "[[word]]"
 
     public String makeOutWord(String out, String word){
-        return out.substring(0,2) + word.substring(2,4);
+        return out.substring(0,2) + word + out.substring(2,4);
+    }
+
+    @Test
+    public void example(){
+        System.out.println(makeOutWord("<<>>", "Hello"));
     }
 }

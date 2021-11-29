@@ -15,7 +15,7 @@ public class Array2centeredAverage {
     public int centeredAverage(int nums[]){
         // we are going to need an empty value to record the centered average
         // find the max number and smallest number
-        int average = 0;
+        int sum = 0;
         int max = nums[0];
         int min = nums[0];
 
@@ -26,14 +26,16 @@ public class Array2centeredAverage {
             // if multiple copies of the smallest and largest value just ignore one copy
             min = Math.min(min,nums[i]);
             max = Math.max(max,nums[i]);
-            average += nums[i];
+            sum += nums[i];
 
             }
             // after loop is ran we will add up the values and use division to find the final average
-            average = average - min - max;
-        return average/ (nums.length-2);
+            sum = sum - min - max;
+        return sum / (nums.length-2);
 
     }
+
+
 
     }
 

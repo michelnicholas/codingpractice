@@ -1,5 +1,7 @@
 package stringsproblems;
 
+import org.testng.annotations.Test;
+
 public class String1withoutX2 {
 //    Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars,
 //    and otherwise return the string unchanged. This is a little harder than it looks.
@@ -33,7 +35,13 @@ public class String1withoutX2 {
     return result;
 
     }
+
+    @Test
+    public void example(){
+        System.out.println(withoutX2("xxHello"));
+    }
 }
+
 
 
 // start with new string

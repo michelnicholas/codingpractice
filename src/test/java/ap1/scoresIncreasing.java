@@ -1,5 +1,7 @@
 package ap1;
 
+import org.testng.annotations.Test;
+
 public class scoresIncreasing {
 
 

@@ -29,6 +29,9 @@ public class String2starOut {
             if (i > 0 && str.charAt(i) != '*' && str.charAt(i-1) != '*'){
                 result += str.charAt(i);
             }
+             /*
+            If condition statement checking the string characters to see if the '*' is appearing in the str or at i -1
+             */
             if (i>0 && str.charAt(i) == '*' && str.charAt(i-1) != '*'){
                 result = result.substring(0,result.length()-1);
             }

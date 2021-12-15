@@ -12,7 +12,7 @@ public class String2starOut {
 
     public String starOut(String str){
         /*
-        Run for loop for thru the string and when iteratiion i touches a char character '*' it will then
+        Run for loop for thru the string and when iteration i touches a char character '*' it will then
         then delete chars left and right of it .
         i - 1 and i + 1
          */
@@ -24,7 +24,7 @@ public class String2starOut {
                 result += str.charAt(i);
             }
             /*
-            If condition statement checking to see
+            If condition statement checking the string characters to see if the '*' is appearing in the str or at i -1
              */
             if (i > 0 && str.charAt(i) != '*' && str.charAt(i-1) != '*'){
                 result += str.charAt(i);

@@ -13,6 +13,7 @@ public class array2TwoTwo {
         /*
         Use nested while loop inside of for loop to count the number of
         times when a 2 is counted t
+        count the number of 2s
         it is not just once then we will return false
         **nested While loop is good for scanning inside of for loop for multiple conditions
         needed inside the method**

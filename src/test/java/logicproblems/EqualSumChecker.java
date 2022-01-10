@@ -16,6 +16,9 @@ public class EqualSumChecker {
         return false;
     }
 
-
+    public static void main(String[] args) {
+        System.out.println(hasEqualSum(3,4,5));
+        System.out.println(hasEqualSum(1,1,2));
+    }
 
 }
